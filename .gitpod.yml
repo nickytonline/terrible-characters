@@ -1,0 +1,19 @@
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+tasks:
+  - init: |
+      brew install gh
+      nvm install $(cat .nvmrc)
+      nvm alias default $(cat .nvmrc)
+      npm install -g vercel
+      yarn install
+    command: yarn dev
+
+vscode:
+  extensions:
+    - juanblanco.solidity
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
+    - eamodio.gitlens
