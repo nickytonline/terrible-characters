@@ -337,6 +337,7 @@ const Home: NextPage = () => {
               display: 'flex',
               margin: 0,
               marginTop: '1rem',
+              padding: 0,
               justifyContent: 'space-between',
               '& li + li': {
                 paddingLeft: '1rem',
