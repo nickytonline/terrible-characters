@@ -3,11 +3,19 @@
 Terrible Characters is a fun NFT based game that I built as part of a
 [Buildspace](https://buildspace.so) cohort. Try it out and have some fun!
 
-### Mint your player
+### Select your player
 
 <center>
 
 ![Mint your player in Terrible Characters](mint-your-player.gif)
+
+</center>
+
+### Mint your player
+
+<center>
+
+![Player being minted](minting.gif)
 
 </center>
 
