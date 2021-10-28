@@ -307,8 +307,14 @@ const Home: NextPage = () => {
       <header>
         <h1
           sx={{
-            fontFamily: 'heading',
+            fontFamily: 'Dokdo',
             color: 'rgba(121,9,59,0.8169642857142857)',
+            fontSize: '3rem',
+            '@media only screen and (min-width: 768px) and (orientation: landscape)':
+              {
+                fontSize: '5rem',
+              },
+            textAlign: 'center',
           }}
         >
           Terrible Characters!

@@ -75,6 +75,14 @@ select {
 }
 /* end - modern CSS reset */
 
+@font-face {
+  font-family: 'Dokdo';
+  src: url('/fonts/Dokdo-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html,
 body {
   height: 100%;
