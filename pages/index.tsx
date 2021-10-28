@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import { ethers } from 'ethers';
 import { useState, useEffect } from 'react';
 import { BaseProvider } from '@metamask/providers';
@@ -299,11 +298,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Terrible Characters!</title>
-        <meta name="description" content="Welcome to Web3" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <header>
         <h1
           sx={{
