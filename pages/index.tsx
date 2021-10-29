@@ -303,12 +303,13 @@ const Home: NextPage = () => {
           sx={{
             fontFamily: 'Dokdo',
             color: 'rgba(121,9,59,0.8169642857142857)',
-            fontSize: '3rem',
+            fontSize: '2.25rem',
             '@media only screen and (min-width: 768px) and (orientation: landscape)':
               {
                 fontSize: '5rem',
               },
             textAlign: 'center',
+            padding: 0,
           }}
         >
           Terrible Characters!
@@ -334,14 +335,13 @@ const Home: NextPage = () => {
           <ul
             sx={{
               listStyle: 'none',
-              display: 'flex',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              placeItems: 'center',
               margin: 0,
               marginTop: '1rem',
               padding: 0,
-              justifyContent: 'space-between',
-              '& li + li': {
-                paddingLeft: '1rem',
-              },
+              gridGap: '1rem',
             }}
           >
             <li>

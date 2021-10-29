@@ -22,7 +22,11 @@ export const SelectCharacter: React.FC<{
         sx={{
           listStyle: 'none',
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          '@media only screen and (min-width: 768px) and (orientation: landscape)':
+            {
+              gridTemplateColumns: 'repeat(3, 1fr)',
+            },
+          justifyItems: 'center',
           gridGap: '1rem',
           margin: '0',
           padding: 0,

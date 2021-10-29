@@ -1,5 +1,4 @@
 import { keyframes } from '@emotion/react';
-import { redirect } from 'next/dist/server/api-utils';
 
 // Pulse animation modified from https://www.florin-pop.com/blog/2019/03/css-pulse-effect/
 const pulse = keyframes`
@@ -19,16 +18,20 @@ const pulse = keyframes`
   }
 `;
 
-interface LoadingIndicatorProps {
-  message?: string;
+interface AttackIndicatorProps {
+  message?: 'string';
 }
 
-export const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
-  message = 'Loading...',
+export const AttackIndicator: React.FC<AttackIndicatorProps> = ({
+  message = 'Attacking... ⚔️',
 }) => (
   <div
     sx={{
-      height: '100vh',
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      top: 0,
+      zIndex: 1,
       display: 'grid',
       placeItems: 'center',
     }}
@@ -42,8 +45,8 @@ export const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
         placeItems: 'center',
         width: '10rem',
         height: '10rem',
-        color: '#fff',
-        backgroundColor: 'accent',
+        color: '#000',
+        backgroundColor: '#fff',
         '@media screen and (prefers-reduced-motion: no-preference)': {
           animation: `${pulse} 1.5s ease-in-out infinite`,
         },

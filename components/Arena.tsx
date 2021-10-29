@@ -11,7 +11,7 @@ import {
 import { toast } from 'react-toastify';
 import { getMissingMetamaskMessage } from 'utilities/metamask';
 import { ArenaCard } from './ArenaCard';
-import { LoadingIndicator } from './LoadingIndicator';
+import { AttackIndicator } from './AttackIndicator';
 
 /*
  * We pass in our characterNFT metadata so we can a cool card in our UI
@@ -140,7 +140,10 @@ const Arena: React.FC<{
           sx={{
             display: 'grid',
             placeItems: 'center',
-            gridGap: '1rem',
+            '@media only screen and (min-width: 768px) and (orientation: landscape)':
+              {
+                gridGap: '1rem',
+              },
             gridTemplateColumns: '1fr 1fr',
           }}
         >
@@ -156,7 +159,7 @@ const Arena: React.FC<{
             attack={attackBoss}
           />
         </div>
-        {attackState === 'attacking' && <LoadingIndicator variant="attack" />}
+        {attackState === 'attacking' && <AttackIndicator />}
       </div>
     )
   );

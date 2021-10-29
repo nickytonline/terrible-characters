@@ -43,7 +43,11 @@ export const ArenaCard: React.FC<ArenaCardProps> = (props) => {
             : '#000',
         color: playerType === 'player' ? 'currentColor' : '#fff',
         padding: '1rem',
-        width: '13rem',
+        width: '12rem',
+        '@media only screen and (min-width: 768px) and (orientation: landscape)':
+          {
+            width: '15rem',
+          },
         height: '23rem',
         '&::before': {
           position: 'absolute',

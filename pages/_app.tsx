@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <ThemeProvider theme={defaultTheme}>
-        <div sx={{ display: 'grid', placeItems: 'center' }}>
+        <div>
           <Component {...pageProps} />{' '}
         </div>
       </ThemeProvider>
